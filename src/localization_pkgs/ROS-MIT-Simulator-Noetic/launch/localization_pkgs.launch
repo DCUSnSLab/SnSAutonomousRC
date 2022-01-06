@@ -1,0 +1,10 @@
+<launch>
+  <include file="$(find ta_lab6)/launch/waypoint_control.launch"> 
+  </include>
+  <include file="$(find ta_lab6)/launch/follow_trajectory.launch">
+  </include>
+  <include file="$(find particle_filter)/launch/localize.launch">
+  </include>
+    <include file="$(find racecar_simulator)/launch/simulate.launch">
+  </include>
+</launch>
