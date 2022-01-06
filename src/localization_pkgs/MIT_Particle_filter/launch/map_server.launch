@@ -1,0 +1,5 @@
+<launch>
+    <arg name="map" default="/home/ros/map_data/turtlebot3_map.yaml"/>
+    <!--<arg name="map" default="$(find particle_filter)/maps/basement_fixed.map.yaml"/>-->
+    <node pkg="map_server" name="map_server" type="map_server" args="$(arg map)" />
+</launch>
